@@ -14,6 +14,8 @@ def choice_ai(): # ai generated part again
 while True: 
   human = input("Enter Your Choice:")
   valid_choices = ["rock", "paper", "scissors"]
+  if human == 'leave':
+    break
   if (human.lower()) not in valid_choices:
     print("That isn't a choice")
     continue # ai generated part again
