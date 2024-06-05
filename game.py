@@ -6,11 +6,7 @@ def ai(rps):
   choice = (random.choice(rps)) 
   print("Ai played...", choice)
   return choice
-
-def choice_ai(): # ai generated part again
- ai_choice = "AI played" + ai(rps)
- return ai_choice
-
+  
 while True: 
   human = input("Enter Your Choice:")
   valid_choices = ["rock", "paper", "scissors"]
@@ -18,7 +14,7 @@ while True:
     break
   if (human.lower()) not in valid_choices:
     print("That isn't a choice")
-    continue # ai generated part again
+    continue 
 
   aic = ai(rps)
 
